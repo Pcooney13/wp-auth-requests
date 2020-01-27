@@ -24,7 +24,7 @@ export function save(post) {
     // Setup method
     method: "post",
     // Setup rest url
-    url: state.restUrl + "wp/v2/posts",
+    url: state.restUrl + "wp/v2/photography",
     // Setup the post object to send
     data: post,
     //  Setup headers with auth token
@@ -60,7 +60,7 @@ export function update(post) {
     // Set method to put
     method: "put",
     // set the URL with the current post id
-    url: state.restUrl + "wp/v2/posts/" + post.id,
+    url: state.restUrl + "wp/v2/photography/" + post.id,
     // Set the post data object to send
     data: post,
     // Set the headers
@@ -94,7 +94,7 @@ export function deletePost(post) {
       // Set method to delete
       method: "delete",
       // Setup the URL for the post to delete
-      url: state.restUrl + "wp/v2/posts/" + post.id,
+      url: state.restUrl + "wp/v2/photography/" + post.id,
       // Setup headers for authenticated request
       headers: {
         "Content-Type": "application/json",

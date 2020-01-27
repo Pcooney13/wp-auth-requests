@@ -1,4 +1,5 @@
 // Import libraries
+import React from "react";
 import axios from "axios";
 
 // Import components
@@ -21,7 +22,7 @@ export function init(event) {
   // Make API request with Axios
   axios
     // Set the url to request posts
-    .get(state.restUrl + "wp/v2/posts", {
+    .get(state.restUrl + "wp/v2/photography", {
       params: {
         // Set number of posts to get
         per_page: 5
@@ -50,8 +51,7 @@ export function render() {
     article.innerHTML = `
         <h2 class="entry-title">
           <a href="#${post.slug}">${post.title.rendered}</a>
-        </h2>
-        <div class="entry-content">${post.excerpt.rendered}</div>      
+        </h2> 
       `;
 
     // Attach an event listenr on the post link

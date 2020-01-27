@@ -1,7 +1,7 @@
 // Set state object with values that are changed programatically
 const state = {
   loggedIn: false,
-  restUrl: "https://decoupledauth.local/wp-json/",
+  restUrl: "https://pat-cooney.com/wp/wp-json/",
   token: "wp-token",
   siteName: "Site Name",
   siteDescription: "Just another decoupled site",
